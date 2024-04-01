@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Age Calculator</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <script src="script.js"></script>
+ <style > 
+
+    /* Style the input field */
+input {
+  padding: 10px;
+  font-size: 16px;
+}
+  /* Style the placeholder text to be bold */
+input::placeholder {
+  font-weight: bold;
+  h1{
+    color:rgb(133, 13, 245)
+  }
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+          <div class="box1">
+             <label for="day">DAY</label>
+             <input type="number" id="Day" name="Day" placeholder="24">
+          </div>
+         <div class="box2"> 
+             <label for="month">MONTH</label>
+             <input type="number" id="Month" name="Month"placeholder="09">
+         </div>
+         <div class="box3">
+             <label for="year">YEAR</label>
+             <input type="number" id="Year" name="Year"placeholder="1984">
+         </div>
+       
+     <div class="horzline">
+         
+         <button onclick="return validateForm()" type="submit" class="roundbutton"><img src="assets/images/icon-arrow.svg" alt="arrow"></button>
+
+
+  </div>
+  <div class="results">
+
+    <div class="text">
+      <h1 id="yearstext">38years</h1>
+     
+      
+    </div>
+    
+    <div class="text">
+      <h1 id="monthstext">3months</h1>
+    </div>
+   
+      <div class="text">
+        <h1 id="daystext">26days</h1>
+      </div>    
+  </div>
+
+
+
+</div>
+       
+ 
+    
+</body>
+</html>
